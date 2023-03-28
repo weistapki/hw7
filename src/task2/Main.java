@@ -8,6 +8,5 @@ public class Main {
 
         System.out.println("Example One : " + solution.containsDuplicate(exampleOne));
         System.out.println("Example Two : " + solution.containsDuplicate(exampleTwo));
-
     }
 }
