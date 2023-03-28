@@ -2,13 +2,13 @@ package task1;
 
 public class Solution {
     public boolean isPalindrome(String s) {
-        String fixedString = "";
+        StringBuilder fixedString = new StringBuilder();
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c) || Character.isLetter(c)) {
-                fixedString += c;
+                fixedString.append(c);
             }
         }
-        fixedString = fixedString.toLowerCase();
+        fixedString = new StringBuilder(fixedString.toString().toLowerCase());
         int frontPointer = 0;
         int backPointer = fixedString.length() - 1;
 
